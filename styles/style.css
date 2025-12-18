@@ -60,3 +60,20 @@ img {
     0 3px 5px rgba(0,0,0,.2), 
     0 5px 10px rgba(0,0,0,.25);
 }
+/* Der Zustand, wenn die Maus über dem Text ist */
+.ramed-3d:hover {
+  color: #ff9500; /* Ändert die Farbe zu Orange (passend zu deinem Background) */
+  cursor: pointer;
+  transform: scale(1.1) translateY(-10px); /* Macht den Text größer und hebt ihn an */
+  transition: all 0.3s ease; /* Macht die Bewegung schön flüssig */
+  
+  /* Wir verstärken den 3D-Schatten beim Drüberfahren */
+  text-shadow: 
+    0 1px 0 #cc8100, 0 2px 0 #b37100, 0 3px 0 #996100, 
+    0 4px 0 #805100, 0 5px 0 #664100, 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Damit die Rückbewegung auch flüssig ist, füge das hier zu deinem bestehenden .ramed-3d hinzu */
+.ramed-3d {
+  transition: all 0.3s ease;
+}
